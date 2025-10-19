@@ -20,10 +20,13 @@ ApiTests/
 ├── appsettings.json
 ├── Helpers/
 │   └── ApiClient.cs
+│   └── IApiClient.cs
 ├── Models/
 │   └── UserModel.cs
 ├── Tests/
 │   └── UserApiTests.cs
+│   └── UserApiMockTests.cs
+│   └── OAuthApiTests.cs
 └── Utils/
     └── TestDataGenerator.cs
 ```
@@ -39,8 +42,8 @@ ApiTests/
 
 1. **Clone the repository:**
     ```bash
-    git clone <your-repo-url>
-    cd ApiTests
+    git clone <repo-url>
+    cd WebServicesTesting
     ```
 
 2. **Install dependencies:**
