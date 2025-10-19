@@ -74,3 +74,15 @@ All tests are located in the `Tests/UserApiTests.cs` file and cover:
 
 > **Note:**  
 > The jsonplaceholder API simulates POST, PUT, and DELETE operations. The data is not actually changed on the server.
+
+## Advanced Scenarios: Authentication and Mocking
+
+This project also demonstrates advanced API testing scenarios:
+
+- **OAuth Authentication Simulation:**  
+  The `OAuthApiTests` class shows how to include OAuth tokens in requests and how to structure tests for protected endpoints.
+
+- **Mocking with NSubstitute:**  
+  The `UserApiMockTests` class uses [NSubstitute](https://nsubstitute.github.io/) to mock the API client, enabling isolated and controlled testing of API consumer logic without real HTTP calls.
+
+These advanced tests are implemented in separate classes to keep the main functional test suite stable and focused.

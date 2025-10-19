@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace WebServicesTesting.Helpers
 {
-    public class ApiClient
+    public class ApiClient : IApiClient
     {
         private readonly RestClient _client;
 
